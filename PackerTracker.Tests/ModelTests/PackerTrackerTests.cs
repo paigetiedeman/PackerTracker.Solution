@@ -32,5 +32,12 @@ namespace PackerTracker.Tests
       string result = newPacker.Items;
       Assert.AreEqual(itemTwo, result);
     }
+    [TestMethod]
+    public void GetAll_ReturnsEmptyList_PackerList()
+    {
+      List<Packer> newList = new List<Packer> {};
+      List<Packer> result = Packer.GetAll();
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }
