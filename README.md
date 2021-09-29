@@ -49,7 +49,7 @@ Copyright (c) 2021 Paige Tiedeman and Anthony McRae
 _Paige Tiedeman @ github.com/paigetiedeman_  
 _Anthony McRae_  
 
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/badge/License-MIT-blue
 [license-url]: https://opensource.org/licenses/MIT
 [language-shield]: https://img.shields.io/badge/Language-C%23-red
 [language-url]: https://docs.microsoft.com/en-us/dotnet/csharp/
