@@ -25,5 +25,12 @@ namespace PackerTracker.Controllers
       Packer myItems = new Packer(items);
       return RedirectToAction("Index");
     }
+    [HttpPost("/packer/delete")]
+    public ActionResult DeleteAll()
+    {
+      Packer.ClearAll();
+      return View();
+    }
+
   }
 }
