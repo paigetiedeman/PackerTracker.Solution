@@ -19,7 +19,7 @@ namespace PackerTracker.Tests
     {
       string item = "Water Bottle";
       Packer newPacker = new Packer(item);
-      string result = newPacker.GetItems();
+      string result = newPacker.Items;
       Assert.AreEqual(item, result);
     }
   }
