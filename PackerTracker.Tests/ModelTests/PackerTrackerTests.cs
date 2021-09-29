@@ -22,5 +22,15 @@ namespace PackerTracker.Tests
       string result = newPacker.Items;
       Assert.AreEqual(item, result);
     }
+    [TestMethod]
+    public void SetItems_SetsItems_String()
+    {
+      string item = "Water Bottle";
+      Packer newPacker = new Packer(item);
+      string itemTwo = "Backpack";
+      newPacker.Items = itemTwo;
+      string result = newPacker.Items;
+      Assert.AreEqual(itemTwo, result);
+    }
   }
 }
