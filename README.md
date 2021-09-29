@@ -1,3 +1,6 @@
+[![Language][language-shield]][language-url]
+[![MIT License][license-shield]][license-url]
+
 # Packer Tracker
 
 #### This is a C# web application to create a list of items to pack.
@@ -39,9 +42,6 @@ This C# web application takes users inputs of items and places them in a UL list
 
 ## License
 
-[![MIT License][license-shield]][license-url]
-[MIT](https://opensource.org/licenses/MIT)
-
 Copyright (c) 2021 Paige Tiedeman and Anthony McRae
 
 ## Contact Information
@@ -51,3 +51,5 @@ _Anthony McRae_
 
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://opensource.org/licenses/MIT
+[language-shield]: https://img.shields.io/badge/Language-C%23-red
+[language-url]: https://docs.microsoft.com/en-us/dotnet/csharp/
