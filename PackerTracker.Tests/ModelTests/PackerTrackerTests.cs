@@ -12,7 +12,7 @@ namespace PackerTracker.Tests
     {
       Packer.ClearAll();
     }
-    
+
     [TestMethod]
     public void PackerConstructor_CreateInstanceOfPacker_Packer()
     {
@@ -41,6 +41,17 @@ namespace PackerTracker.Tests
     public void GetAll_ReturnsEmptyList_PackerList()
     {
       List<Packer> newList = new List<Packer> {};
+      List<Packer> result = Packer.GetAll();
+      CollectionAssert.AreEqual(newList, result);
+    }
+    [TestMethod]
+    public void GetAll_ReturnsPackerItems_PackerList()
+    {
+      string item1 = "Water Bottle";
+      string item2 = "Backpack";
+      Packer newPacker1 = new Packer(item1);
+      Packer newPacker2 = new Packer(item2);
+      List<Packer> newList = new List<Packer> {newPacker1, newPacker2};
       List<Packer> result = Packer.GetAll();
       CollectionAssert.AreEqual(newList, result);
     }
