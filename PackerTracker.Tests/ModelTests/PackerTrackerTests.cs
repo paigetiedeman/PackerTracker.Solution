@@ -11,8 +11,16 @@ namespace PackerTracker.Tests
     [TestMethod]
     public void PackerConstructor_CreateInstanceOfPacker_Packer()
     {
-      Packer newPacker = new Packer();
+      Packer newPacker = new Packer("test");
       Assert.AreEqual(typeof(Packer), newPacker.GetType());
+    }
+    [TestMethod]
+    public void GetItems_ReturnsItems_String()
+    {
+      string item = "Water Bottle";
+      Packer newPacker = new Packer(item);
+      string result = newPacker.GetItems();
+      Assert.AreEqual(item, result);
     }
   }
 }

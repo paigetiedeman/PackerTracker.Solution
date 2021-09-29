@@ -7,11 +7,11 @@ namespace PackerTracker.Controllers
   public class PackerController : Controller
   {
 
-    [HttpGet("/items")]
-    public ActionResult Index()
-    {
-      List<Item> allItems = Item.GetAll();
-      return View(allItems);
-    }
+    // [HttpGet("/items")]
+    // public ActionResult Index()
+    // {
+    //   List<Item> allItems = Item.GetAll();
+    //   return View(allItems);
+    // }
   }
 }
