@@ -6,12 +6,24 @@ namespace PackerTracker.Controllers
 {
   public class PackerController : Controller
   {
+    [HttpGet("/packer")]
+    public ActionResult Index()
+    {
+      List<Packer> allItems = Packer.GetAll();
+      return View(allItems);
+    }
+    
+    [HttpGet("/packer/new")]
+    public ActionResult New()
+    {
+      return View();
+    }
 
-    // [HttpGet("/items")]
-    // public ActionResult Index()
-    // {
-    //   List<Item> allItems = Item.GetAll();
-    //   return View(allItems);
-    // }
+    [HttpPost("/packer")]
+    public ActionResult Create(string items)
+    {
+      Packer myItems = new Packer(items);
+      return RedirectToAction("Index");
+    }
   }
 }
