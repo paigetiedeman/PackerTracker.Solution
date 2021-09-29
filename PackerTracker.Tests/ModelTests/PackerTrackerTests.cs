@@ -6,8 +6,13 @@ using System;
 namespace PackerTracker.Tests
 {
   [TestClass]
-  public class PackerTracker
+  public class PackerTracker : IDisposable
   {
+    public void Dispose()
+    {
+      Packer.ClearAll();
+    }
+    
     [TestMethod]
     public void PackerConstructor_CreateInstanceOfPacker_Packer()
     {
